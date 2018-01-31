@@ -80,6 +80,7 @@ wiekTaty = parseInt(wiekTaty);
 wiekDziecka = parseInt(wiekDziecka);
 
 var wiekSredni = (wiekMamy+wiekTaty+wiekDziecka)/3;
+wiekSredni = wiekSredni.toFixed(2);
 document.write ("Mama:"+ wiekMamy +"lat<br>");
 document.write("Tata:" + wiekTaty + "lat<br>");
 document.write("Dziecko:" + wiekDziecka + "lat<br>");
