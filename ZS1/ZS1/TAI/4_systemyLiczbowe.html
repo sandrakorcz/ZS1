@@ -8,6 +8,7 @@
    <h3>Systemy liczbowe</h3>
     <div id="wynik"></div>
     <div id="wynik1"></div>
+    <div id="wynik2"></div>
     <script>
         /*
         0 - oktalna (depresjonowana)
@@ -16,6 +17,7 @@
         */
         var elWynik = document.getElementById('wynik');
         var elWynik1 = document.getElementById('wynik1');
+        var elWynik2 = document.getElementById('wynik2')
         /* document.write('<h3>Systemy liczbowe</h3>');*/
 
         var dziesietna = 45;
@@ -38,6 +40,13 @@
 
        /*Zadanie domowe
         Napisz program konwertujący system oktalny na decymalny.*/
+
+        var oktalna1 = prompt('Podaj liczbę w systemie oktalnym');
+        oktalna2 = '0o' + oktalna1;
+        oktalna2 = Number(oktalna2);
+        console.log(typeof(oktalna2));
+        elWynik2.style.color = 'green';
+        elWynik2.innerHTML = '(' + oktalna1 + ')<sub>8</sub> = (' + oktalna2 + ') <sub>10</sub>';
 
     </script>
 </body>
