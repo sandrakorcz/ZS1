@@ -1,0 +1,43 @@
+body{
+  font-family: Arial, Verdana;
+  color: #35c2de;
+}
+
+table {
+  width: 600 px;
+}
+
+th, td {
+  padding: 7px 10px 10px 10px;
+  text-align: center;
+}
+
+th {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 90%;
+  border-bottom: 2px solid #34ad34;
+  border-top: 1px solid #35ad35;
+  text-align: left;
+}
+
+.even {
+  background-color: #d5ede4;
+}
+
+.js,.java,.zarobki {
+  background-color: #dceae5;
+}
+
+td:hover {
+  background-color: aquamarine;
+  color: cadetblue;
+}
+
+.money {
+  text-align: right;
+}
+
+#i7 {
+  font-weight: bold;
+}
