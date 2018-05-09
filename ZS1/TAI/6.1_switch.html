@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Switch stolice</title>
+</head>
+<body>
+  <script>
+  var panstwo = prompt('Podaj państwo','Polska/Niemcy/Rosja');
+    switch (panstwo) {
+    case 'Polska':
+      var pilka = prompt('Czy lubisz piłkę nożną?', 'tak/nie');
+      if (pilka == 'tak'){
+      document.write('Najlepsza druzyna piłkarska w Polsce to Lech Poznań <br>');}
+    else {
+      document.write('Nie lubisz piłki noznej');}
+      document.write('Pierwszą stolicą Polski jest Gniezno');
+      break;
+        case 'Rosja':
+      var pilka = prompt('Czy lubisz piłkę nożną?', 'tak/nie');
+      if (pilka == 'tak'){
+      document.write('Najlepsza druzyna piłkarska w Rosji to CSKA Moskwa <br>');}
+    else {
+      document.write('Nie lubisz piłki noznej');}
+      document.write('Pierwszą stolicą Rosji jest Petersburg');
+      break;
+  case 'Niemcy':
+      var pilka = prompt('Czy lubisz piłkę nożną?', 'tak/nie');
+      if (pilka == 'tak'){
+      document.write('Najlepsza druzyna piłkarska w Niemczech to Bayern Monachium <br>');}
+    else {
+      document.write('Nie lubisz piłki noznej');}
+      document.write('Pierwszą stolicą Niemczech jest Berlin');
+      break;
+        }
+  </script>
+</body>
+</html>
