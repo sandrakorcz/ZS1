@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 1</title>
+    <link rel="stylesheet" href="Style/stylezadanie.css">
+</head>
+<body>
+   <div id="przyciski"><form name="form1"></form>
+      <input type="submit" value="wp.pl" id="wp" onclick="wp()">
+        <br>
+    <form name="form2"></form>
+      <input type="submit" value="onet.pl" id="onet" onclick="onet()">
+       <br>
+    <form name="form3"></form>
+      <input type="submit" value="gmail.com" id="gmail" onclick="gmail()">
+       <br><br></div>
+
+    <div id="suma"></div><br>
+
+    <script>
+        var elsuma = document.getElementById('suma');
+    var x = Number(prompt('Podaj wartośc x'));
+    var y = Number(prompt('Podaj wartość y'));
+    var a = (2*x + 1/2*y)/(x-y);
+
+
+    elsuma.innerHTML = 'Suma wynosi: ' + a;
+    elsuma.style.color = '#0076ff';
+
+
+        function wp () {
+            document.forms['form1'].action = 'https://www.wp.pl/';
+            document.forms['form1'].submit()
+        }
+
+        function onet () {
+            document.forms['form2'].action = 'https://www.onet.pl/';
+            document.forms['form2'].submit()
+        }
+
+        function gmail () {
+            document.forms['form3'].action = 'https://mail.google.com';
+            document.forms['form3'].submit()
+        }
+
+
+    </script>
+    <a href="#roz1">Rozdział 1</a>
+    <a href="#roz2">Rozdział 2</a>
+    <a href="#roz3">Rozdział 3</a>
+
+   <h1 id="roz1">Rozdział 1</h1>
+
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at sollicitudin leo. Curabitur tincidunt lobortis lectus, pulvinar vulputate ante. Curabitur accumsan massa erat, vel luctus risus volutpat vitae. Cras sit amet feugiat nisl. Pellentesque mollis mollis purus at rutrum. Nunc semper blandit mauris in cursus. Morbi hendrerit ipsum lorem, quis feugiat nibh ornare et. Fusce ac tincidunt nisl. Integer pellentesque dictum velit eget ornare. In hac habitasse platea dictumst. Nullam tempor facilisis aliquam. Nullam sit amet scelerisque metus, a auctor leo. Curabitur sodales, lacus non bibendum pretium, arcu erat auctor enim, ullamcorper scelerisque turpis tortor ac massa. Nulla et sem eu sem interdum sodales.
+
+Maecenas finibus, magna vel viverra blandit, lacus nisi sodales dui, vitae imperdiet lectus orci et sapien. Ut eu eros aliquam, ultricies dolor ac, molestie lacus. Aliquam mattis ipsum sed ligula ultrices mattis. Nulla tempor varius leo, ac commodo ex. Cras turpis justo, semper eget dolor a, rhoncus tincidunt nibh. Quisque non diam vitae arcu maximus interdum maximus at nisi. Mauris ut nisi eget quam mattis ullamcorper nec vel leo.
+
+   <h1 id="roz2">Rozdział 2</h1>
+
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at sollicitudin leo. Curabitur tincidunt lobortis lectus, pulvinar vulputate ante. Curabitur accumsan massa erat, vel luctus risus volutpat vitae. Cras sit amet feugiat nisl. Pellentesque mollis mollis purus at rutrum. Nunc semper blandit mauris in cursus. Morbi hendrerit ipsum lorem, quis feugiat nibh ornare et. Fusce ac tincidunt nisl. Integer pellentesque dictum velit eget ornare. In hac habitasse platea dictumst. Nullam tempor facilisis aliquam. Nullam sit amet scelerisque metus, a auctor leo. Curabitur sodales, lacus non bibendum pretium, arcu erat auctor enim, ullamcorper scelerisque turpis tortor ac massa. Nulla et sem eu sem interdum sodales.
+
+Maecenas finibus, magna vel viverra blandit, lacus nisi sodales dui, vitae imperdiet lectus orci et sapien. Ut eu eros aliquam, ultricies dolor ac, molestie lacus. Aliquam mattis ipsum sed ligula ultrices mattis. Nulla tempor varius leo, ac commodo ex. Cras turpis justo, semper eget dolor a, rhoncus tincidunt nibh. Quisque non diam vitae arcu maximus interdum maximus at nisi. Mauris ut nisi eget quam mattis ullamcorper nec vel leo.
+
+   <h1 id="roz3">Rozdział 3</h1>
+
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at sollicitudin leo. Curabitur tincidunt lobortis lectus, pulvinar vulputate ante. Curabitur accumsan massa erat, vel luctus risus volutpat vitae. Cras sit amet feugiat nisl. Pellentesque mollis mollis purus at rutrum. Nunc semper blandit mauris in cursus. Morbi hendrerit ipsum lorem, quis feugiat nibh ornare et. Fusce ac tincidunt nisl. Integer pellentesque dictum velit eget ornare. In hac habitasse platea dictumst. Nullam tempor facilisis aliquam. Nullam sit amet scelerisque metus, a auctor leo. Curabitur sodales, lacus non bibendum pretium, arcu erat auctor enim, ullamcorper scelerisque turpis tortor ac massa. Nulla et sem eu sem interdum sodales.
+
+Maecenas finibus, magna vel viverra blandit, lacus nisi sodales dui, vitae imperdiet lectus orci et sapien. Ut eu eros aliquam, ultricies dolor ac, molestie lacus. Aliquam mattis ipsum sed ligula ultrices mattis. Nulla tempor varius leo, ac commodo ex. Cras turpis justo, semper eget dolor a, rhoncus tincidunt nibh. Quisque non diam vitae arcu maximus interdum maximus at nisi. Mauris ut nisi eget quam mattis ullamcorper nec vel leo.
+
+</body>
+</html>

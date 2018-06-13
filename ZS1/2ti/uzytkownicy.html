@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Użytkownicy</title>
+</head>
+<body>
+    <form name="impra">
+       <div>
+           <label for="date">Twoja data urodzenia: </label>
+           <input type="date" id="date" name="date" value="2018-05-30">
+           <hr>
+           <label for="impreza">Wybierz datę imprezy: </label>
+           <input type="date" id="impreza" name="impreza" min="2018-06-23" max="2018-06-25" value="2018-06-23">
+           <span id="komunikat"></span>
+           <input type="submit" id="przycisk" name="przycisk">
+           <hr>
+       </div>
+       <script>
+        document.forms['impra'].action = 'impreza.php';
+        </script>
+    </form>
+</body>
+</html>
