@@ -5,14 +5,40 @@
     <title>Funkcje</title>
 </head>
 <body>
-    <input type="number" name="wiek" id="wiek"><br><br>
-    <input type="submit" name="alarm" id="alarmP" value="Alarm">
+   <style>
+    input {
+        text-align: center;
+    }
+    </style>
+
+    <input type="number" name="a" id="a">
+    <select id="dzialanie" name="dzialanie">
+        <option value="+">+</option>
+        <option value="-">-</option>
+    </select>
+    <input type="number" name="b" id="b"> =
+    <input type="number" name="wynik" id="wynik" disabled>
+
+    <input type="submit" name="alarm" id="alarmP" value="Oblicz">
+
     <script>
-        function alarm() {
-            let wiek = document.getElementById('wiek').value
-            alert('Masz ' + wiek + ' lat.');
+        function calc() {
+            var oblicz;
+            let dzialanie = document.getElementById('dzialanie').value;
+            let a = Number(document.getElementById('a').value);
+            let b = Number(document.getElementById('b').value);
+
+            if (dzialanie == "+") {
+                oblicz = a+b;
+            } else if (dzialanie == '-') {
+                oblicz = a-b;
+            }
+
+            let wynik = document.getElementById('wynik');
+            wynik.value = oblicz;
         }
-        alarmP.addEventListener('click', alarm);
+        alarmP.addEventListener('click', calc);
     </script>
+
 </body>
 </html>
