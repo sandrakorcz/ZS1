@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Funkcje</title>
+</head>
+<body>
+    <input type="number" name="wiek" id="wiek"><br><br>
+    <input type="submit" name="alarm" id="alarmP" value="Alarm">
+    <script>
+        function alarm() {
+            let wiek = document.getElementById('wiek').value
+            alert('Masz ' + wiek + ' lat.');
+        }
+        alarmP.addEventListener('click', alarm);
+    </script>
+</body>
+</html>
